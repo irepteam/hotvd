@@ -1,0 +1,20 @@
+<div class="mstCategories form">
+<?php echo $this->Form->create('MstCategory'); ?>
+	<fieldset>
+		<legend><?php echo __('Add Mst Category'); ?></legend>
+	<?php
+		echo $this->Form->input('category_name');
+		echo $this->Form->input('delete_flg');
+		echo $this->Form->input('create_time');
+		echo $this->Form->input('update_time');
+	?>
+	</fieldset>
+<?php echo $this->Form->end(__('Submit')); ?>
+</div>
+<div class="actions">
+	<h3><?php echo __('Actions'); ?></h3>
+	<ul>
+
+		<li><?php echo $this->Html->link(__('List Mst Categories'), array('action' => 'index')); ?></li>
+	</ul>
+</div>
