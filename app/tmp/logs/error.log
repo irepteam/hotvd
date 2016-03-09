@@ -1,0 +1,21 @@
+2016-03-05 18:05:07 Error: [MissingControllerException] Controller class MstCategoryController could not be found.
+Exception Attributes: array (
+  'class' => 'MstCategoryController',
+  'plugin' => NULL,
+)
+Request URL: /Hotvideo/mstCategory
+Stack Trace:
+#0 /home/toan/workspace/Hotvideo/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-03-05 18:05:24 Error: [MissingViewException] View file "MstVideos/admin_index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'MstVideos/admin_index.ctp',
+)
+Request URL: /Hotvideo/admin/mstVideos
+Stack Trace:
+#0 /home/toan/workspace/Hotvideo/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /home/toan/workspace/Hotvideo/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /home/toan/workspace/Hotvideo/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /home/toan/workspace/Hotvideo/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MstVideosController), Object(CakeRequest))
+#4 /home/toan/workspace/Hotvideo/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

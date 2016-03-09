@@ -8,6 +8,10 @@
 /build
 /dist
 /tags
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> toan
 *.mo
 
 # IDE and editor specific files #
@@ -22,6 +26,11 @@
 ._*
 .Spotlight-V100
 .Trashes
+<<<<<<< HEAD
+=======
+.htaccess
+=======
+>>>>>>> toan
 Icon?
 ehthumbs.db
 Thumbs.db
