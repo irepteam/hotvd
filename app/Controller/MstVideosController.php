@@ -56,7 +56,10 @@ class MstVideosController extends AppController {
 			} else {
 				$this->Flash->error(__('The mst video could not be saved. Please, try again.'));
 			}
-		}
+		} else {
+                    $categories = $this->MstVideo->MstCategory->find('list', array('fields' => array('id', 'category_name')));
+                    $this->set('categories', $categories);
+                }
 	}
 
 /**
@@ -79,7 +82,14 @@ class MstVideosController extends AppController {
 			}
 		} else {
 			$options = array('conditions' => array('MstVideo.' . $this->MstVideo->primaryKey => $id));
-			$this->request->data = $this->MstVideo->find('first', $options);
+			$video = $this->MstVideo->find('first', $options);
+                        $this->request->data = $video;
+                        // Category list for select box
+                        $categories = $this->MstVideo->MstCategory->find('list', array('fields' => array('id', 'category_name')));
+                        $this->set('categories', $categories);
+                        
+                        // Category selected
+                        $this->set('category_id', $video['MstVideo']['category_id']);
 		}
 	}
 

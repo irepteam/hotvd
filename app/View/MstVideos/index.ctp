@@ -6,6 +6,7 @@
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('video_name'); ?></th>
 			<th><?php echo $this->Paginator->sort('category_id'); ?></th>
+                        <th><?php echo $this->Paginator->sort('source_html'); ?></th>
 			<th><?php echo $this->Paginator->sort('description'); ?></th>
 			<th><?php echo $this->Paginator->sort('media_view'); ?></th>
 			<th><?php echo $this->Paginator->sort('system_view'); ?></th>
@@ -24,7 +25,7 @@
 	<tr>
 		<td><?php echo h($mstVideo['MstVideo']['id']); ?>&nbsp;</td>
 		<td><?php echo h($mstVideo['MstVideo']['video_name']); ?>&nbsp;</td>
-		<td><?php echo h($mstVideo['MstVideo']['category_id']); ?>&nbsp;</td>
+		<td><?php echo h($mstVideo['MstCategory']['category_name']); ?>&nbsp;</td>
 		<td><?php echo h($mstVideo['MstVideo']['description']); ?>&nbsp;</td>
 		<td><?php echo h($mstVideo['MstVideo']['media_view']); ?>&nbsp;</td>
 		<td><?php echo h($mstVideo['MstVideo']['system_view']); ?>&nbsp;</td>
